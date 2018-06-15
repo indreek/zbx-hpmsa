@@ -16,7 +16,9 @@ E.g. I've renamed some long options:
 - '--discovery' => '--lld'
 - '--showcache' => '--show-cache'
 - '--loginfile' => '--login-file'  
-Also, full JSON returned with '-g all|full' parameter was changed and extended in v0.5, so check if you using it.
+
+Also, full JSON returned with '-g all|full' parameter was changed and extended in v0.5, so check if you using it.  
+LLD data that returns with '-d|--lld' parameter now brings to one style and using dot ('.') as separator ({#DISK.ID}, {#CONTROLLER.SN} etc).  
 New attached template has no LLD rule for virtual disks, because of it was removed in new API versions (since MSA 2050) and replaced with 'disk-groups'.
 zbx-hpmsa still can found and check 'vdisks', but you must add this rule to template manually.
 
